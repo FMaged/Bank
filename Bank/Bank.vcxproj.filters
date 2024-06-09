@@ -111,6 +111,12 @@
     <ClInclude Include="ClsTransfer.hh">
       <Filter>UI_Header\TransactionMenue</Filter>
     </ClInclude>
+    <ClInclude Include="ClsTransferLog.hh">
+      <Filter>UI_Header\TransactionMenue</Filter>
+    </ClInclude>
+    <ClInclude Include="ClsCurrency.hh">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ClsValidate.cpp">
@@ -139,6 +145,8 @@
     <Text Include="Clients.txt" />
     <Text Include="LoginRegister.txt" />
     <Text Include="Users.txt" />
+    <Text Include="TransferLog.txt" />
+    <Text Include="Currencies.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />

@@ -222,7 +222,7 @@ public:
                 return enSaveResult::svSucceeded;
             }
         default:
-            // If somehow _mode has an unexpected value, return failure.
+            // If somehow _mode has an unexpected vaTlue, return failure.
             return enSaveResult::svFaildEmptyObj;
 
         }

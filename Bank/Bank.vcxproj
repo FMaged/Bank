@@ -131,6 +131,7 @@
     <ClInclude Include="ClsAddNewUserScreen.hh" />
     <ClInclude Include="ClsClient.hh" />
     <ClInclude Include="ClsClientListScreen.hh" />
+    <ClInclude Include="ClsCurrency.hh" />
     <ClInclude Include="ClsDate.hh" />
     <ClInclude Include="ClsDeleteClientScreen.hh" />
     <ClInclude Include="ClsDeleteUserScreen.hh" />
@@ -147,6 +148,7 @@
     <ClInclude Include="ClsTotalBalancesScreen.hh" />
     <ClInclude Include="ClsTransactionMenueScreen.hh" />
     <ClInclude Include="ClsTransfer.hh" />
+    <ClInclude Include="ClsTransferLog.hh" />
     <ClInclude Include="ClsUpdateClientScreen.hh" />
     <ClInclude Include="ClsUpdateUserScreen.hh" />
     <ClInclude Include="ClsUser.hh" />
@@ -167,7 +169,9 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="Clients.txt" />
+    <Text Include="Currencies.txt" />
     <Text Include="LoginRegister.txt" />
+    <Text Include="TransferLog.txt" />
     <Text Include="Users.txt" />
   </ItemGroup>
   <ItemGroup>

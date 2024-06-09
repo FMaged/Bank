@@ -11,7 +11,16 @@
 
 static string ClientsFileName = "Clients.txt";
 class ClsClient :public ClsPerson {
-
+public:
+    struct stTransferLogRecord {
+        string dateTime;
+        string sourceAccountNumber;
+        string destinationAccountNumber;
+        double amount;
+        double srcBalanceAfter;
+        double destBalanceAfter;
+        string userName;
+    };
 private:
     enum enMode { EmptyMode = 0, UpdateMode = 1, AddNewMode = 2, DeleteMode = 3 };
     enMode _Mode;
@@ -30,7 +39,8 @@ private:
     void _addNew();
     void _registerTransferLog(float Amount, ClsClient DestinationClient, string UserName);
     string _prepareTrasferLogRecord(float Amount, ClsClient DestinationClient, string UserName,string Seperator ="#//#");
-    
+    static stTransferLogRecord _ConvertTransferLogLineToRecord(string Line, string Seperator = "#//#");
+
     void _addDataLineToFile(string Line);
 
 
@@ -65,4 +75,17 @@ public:
     enum enSaveResult { svFaildEmptyObj = 0, svSucceeded = 1, svFaildAccNumberExists = 2 };
     enSaveResult save();
     bool transfer(float Amount, ClsClient& DestinationClient,string UserName);
+    
+   
+
+    static vector<stTransferLogRecord> getTransferLogList();
+
+
+
+
+
+    
+
+
+
 };

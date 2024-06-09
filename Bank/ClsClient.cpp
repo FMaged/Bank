@@ -235,6 +235,40 @@ string ClsClient::_prepareTrasferLogRecord(float Amount, ClsClient DestinationCl
     TransferLogRecord += UserName;
     return TransferLogRecord;
 }
+ClsClient::stTransferLogRecord ClsClient::_ConvertTransferLogLineToRecord(string Line, string Seperator){
+    stTransferLogRecord TrnsferLogRecord;
 
+    vector <string> vTrnsferLogRecordLine = ClsString::splitString(Line, Seperator);
+    TrnsferLogRecord.dateTime = vTrnsferLogRecordLine[0];
+    TrnsferLogRecord.sourceAccountNumber = vTrnsferLogRecordLine[1];
+    TrnsferLogRecord.destinationAccountNumber = vTrnsferLogRecordLine[2];
+    TrnsferLogRecord.amount = stod(vTrnsferLogRecordLine[3]);
+    TrnsferLogRecord.srcBalanceAfter = stod(vTrnsferLogRecordLine[4]);
+    TrnsferLogRecord.destBalanceAfter = stod(vTrnsferLogRecordLine[5]);
+    TrnsferLogRecord.userName = vTrnsferLogRecordLine[6];
+
+    return TrnsferLogRecord;
+
+}
+
+vector<ClsClient::stTransferLogRecord> ClsClient::getTransferLogList() {
+    vector<stTransferLogRecord>vTransferLogRecord;
+    fstream myFile;
+    myFile.open("TransferLog.txt", ios::in);
+    if (myFile.is_open()) {
+        string line;
+        stTransferLogRecord TransferLogRecord;
+        while (getline(myFile, line)) {
+            TransferLogRecord = _ConvertTransferLogLineToRecord(line);
+            vTransferLogRecord.push_back(TransferLogRecord);
+        }
+        myFile.close();
+    }
+    return vTransferLogRecord;
+
+
+
+
+}
 
 
