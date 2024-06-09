@@ -149,7 +149,6 @@
     <Text Include="Currencies.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include=".gitignore" />
     <None Include="makefile" />
   </ItemGroup>
 </Project>

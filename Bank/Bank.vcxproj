@@ -175,7 +175,6 @@
     <Text Include="Users.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include=".gitignore" />
     <None Include="makefile" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
