@@ -1,6 +1,7 @@
 #pragma once
 #include <iomanip>
 #include "ClsScreen.hh"
+#include "ClsCurrencyListScreen.hh"
 
 
 
@@ -21,7 +22,7 @@ private:
 		showCurrencyExchange();
 	}
 	static void _showCurrencyListScreen() {
-		cout << "Currency List Screen will be here!\n";
+		ClsCurrencyListScrren::showCurrencyListScreen();
 	}
 	static void _showFindCurrencyScreen() {
 		cout << "Find Currency Screen will be here!\n";

@@ -133,6 +133,7 @@
     <ClInclude Include="ClsClientListScreen.hh" />
     <ClInclude Include="ClsCurrency.hh" />
     <ClInclude Include="ClsCurrencyExchangeMenueScreen.hh" />
+    <ClInclude Include="ClsCurrencyListScreen.hh" />
     <ClInclude Include="ClsDate.hh" />
     <ClInclude Include="ClsDeleteClientScreen.hh" />
     <ClInclude Include="ClsDeleteUserScreen.hh" />
