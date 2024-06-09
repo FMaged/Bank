@@ -2,6 +2,7 @@
 #include <iomanip>
 #include "ClsScreen.hh"
 #include "ClsCurrencyListScreen.hh"
+#include "ClsFindCurrencyScreen.hh"
 
 
 
@@ -25,7 +26,7 @@ private:
 		ClsCurrencyListScrren::showCurrencyListScreen();
 	}
 	static void _showFindCurrencyScreen() {
-		cout << "Find Currency Screen will be here!\n";
+		ClsFindCurrencyScreen::showFindCurrencyScreen();
 	}
 	static void _showUpdateRateScreen() {
 		cout << "Update Currency Rate Screen will be here!\n";
@@ -44,27 +45,27 @@ private:
 		switch (CurrencyExchangeMenueOption)
 		{
 		case ClsCurrencyExchangeScreen::eCurrenciesList:
-			system("cls");
+			
 			_showCurrencyListScreen();
 			_goBackToCurrencyExchangeScreen();
 			break;
 		case ClsCurrencyExchangeScreen::eFindCurrency:
-			system("cls");
+			
 			_showFindCurrencyScreen();
 			_goBackToCurrencyExchangeScreen();
 			break;
 		case ClsCurrencyExchangeScreen::eUpdateRate:
-			system("cls");
+			
 			_showUpdateRateScreen();
 			_goBackToCurrencyExchangeScreen();
 			break;
 		case ClsCurrencyExchangeScreen::eCalculator:
-			system("cls");
+			
 			_showCurrencyCalculatorScreen();
 			_goBackToCurrencyExchangeScreen();
 			break;
 		case ClsCurrencyExchangeScreen::eMainMenue:
-			system("cls");
+			
 			_showMainMenueScreen();
 			break;
 
@@ -81,7 +82,7 @@ public:
 		if (!checkAccessRight(ClsUser::enPermission::pManageUser)) {
 			return;
 		}
-		system("cls");
+		
 		_drawScreenHeader("Currency Exchange Screen");
 		cout << setw(37) << left << "" << "===========================================\n";
 		cout << setw(37) << left << "" << "\t\tCurrency Exchange Menue\n";

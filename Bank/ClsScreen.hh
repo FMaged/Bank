@@ -9,6 +9,7 @@ using namespace std;
 class ClsScreen {
 protected:
     static void _drawScreenHeader(string Title, string SubTitle = "") {
+        system("cls");
         cout << "\t\t\t\t\t--------------------------------------";
         cout << "\n\n\t\t\t\t\t  " << Title;
         if (SubTitle != "")

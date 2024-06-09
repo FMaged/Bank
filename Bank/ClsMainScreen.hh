@@ -74,47 +74,47 @@ private:
     static void _preformMainMenueOption(enMainScreenOptions MainMenueOption) {
         switch (MainMenueOption) {
         case enMainScreenOptions::eListClients:
-            system("cls");
+
             _showAllClientScreen();
             _goBackToMainMenue();
             break;
         case enMainScreenOptions::eAddNewClient:
-            system("cls");
+
             _addNewClientnScreen();
             _goBackToMainMenue();
             break;
         case enMainScreenOptions::eDeleteClient:
-            system("cls");
+
             _deleteClientScreen();
             _goBackToMainMenue();
             break;
         case enMainScreenOptions::eUpdateClient:
-            system("cls");
+
             _updateClientScreen();
             _goBackToMainMenue();
             break;
         case enMainScreenOptions::eFindClient:
-            system("cls");
+;
             _findClientScreen();
             _goBackToMainMenue();
             break;
         case enMainScreenOptions::eShowTransactionsMenue:
-            system("cls");
+
             _transactionsMenueScreen();
             _goBackToMainMenue();
             break;
         case enMainScreenOptions::eManageUsers:
-            system("cls");
+
             _manageUsersScreen();
             _goBackToMainMenue();
             break;
         case enMainScreenOptions::eShowLoginRegister:
-            system("cls");
+
             _loginRegisterScreen();
             _goBackToMainMenue();
             break;
         case enMainScreenOptions::eCurrencyExchange:
-            system("cls");
+         
             _currencyExchangeScreen();
             _goBackToMainMenue();
             break;
@@ -127,7 +127,7 @@ private:
     }
 public:
     static void showMainMenue() {
-        system("cls");
+ 
         _drawScreenHeader("\t     Main Screen");
         cout << setw(37) << left << "" << "===========================================\n";
         cout << setw(37) << left << "" << "\t\t     Main Menue\n";

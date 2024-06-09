@@ -139,6 +139,7 @@
     <ClInclude Include="ClsDeleteUserScreen.hh" />
     <ClInclude Include="ClsDepositScreen.hh" />
     <ClInclude Include="ClsFindClientScreen.hh" />
+    <ClInclude Include="ClsFindCurrencyScreen.hh" />
     <ClInclude Include="ClsFindUserScreen.hh" />
     <ClInclude Include="ClsListUsersScreen.hh" />
     <ClInclude Include="ClsLoginScreen.hh" />

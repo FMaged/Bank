@@ -58,32 +58,32 @@ private:
     static void _prefomTransactionMenueOption(enTransactionScreenOption TransactionScreenOption) {
         switch (TransactionScreenOption) {
         case enTransactionScreenOption::Deposit:
-            system("cls");
+  
             _deposit();
             _goBackToTransactionMenue();
             break;
         case enTransactionScreenOption::Withdraw:
-            system("cls");
+           
             _withdraw();
             _goBackToTransactionMenue();
             break;
         case enTransactionScreenOption::TotalBalances:
-            system("cls");
+          
             _totalBalances();
             _goBackToTransactionMenue();
             break;
         case enTransactionScreenOption::Transfer:
-            system("cls");
+          
             _transfer();
             _goBackToTransactionMenue();
             break;
         case enTransactionScreenOption::TransferLog:
-            system("cls");
+    
             _transferLog();
             _goBackToTransactionMenue;
             break;
         case enTransactionScreenOption::MainMenue:
-            system("cls");
+         
             _goBackToMainMenue();
             break;
         }
@@ -92,7 +92,7 @@ private:
 public:
 
     static void showTransactionMenue() {
-        system("cls");
+  
         if (!checkAccessRight(ClsUser::enPermission::pTransactios)) {
             return;
         }

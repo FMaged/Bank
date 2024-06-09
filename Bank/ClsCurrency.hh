@@ -114,17 +114,28 @@ public:
 		}
 		return _getEmptyCurrencyObject();
 	}
-	static ClsCurrency findByCountry(string CurrencyName) {
-		CurrencyName = ClsString::upperAllString(CurrencyName);
+	static ClsCurrency findByCountry(string CountryName) {
+		CountryName = ClsString::upperAllString(CountryName);
 		vector<ClsCurrency>vCurrencies = _loadCurrencysDataFromFile();
 		for (ClsCurrency Currency : vCurrencies) {
-			if (ClsString::upperAllString(Currency._currencyName) == CurrencyName) {
+			if (ClsString::upperAllString(Currency._country) == CountryName) {
 				return Currency;
 			}
 		}
 		return _getEmptyCurrencyObject();
 	}
+	static ClsCurrency find(string CurrencyKey) {
+		CurrencyKey = ClsString::upperAllString(CurrencyKey);
 
+		vector<ClsCurrency>vCurrencies = _loadCurrencysDataFromFile();
+		for (ClsCurrency Currency : vCurrencies) {
+			if (ClsString::upperAllString(Currency._country) == CurrencyKey|| ClsString::upperAllString(Currency._currencyCode) == CurrencyKey) {
+				return Currency;
+			}
+
+		}
+		return _getEmptyCurrencyObject();
+	}
 	static bool IsCurrencyExist(string CurrencyCode) {
 		ClsCurrency C = findByCode(CurrencyCode);
 		return (!C.IsEmpty());

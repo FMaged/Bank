@@ -56,32 +56,32 @@ private:
 
         switch (ManageUsersMenueOption) {
         case enManageUsersMenueOption::eListUsers:
-            system("cls");
+      
             _showListUsersScreen();
             _goBackToManageUsersScreen();
             break;
         case enManageUsersMenueOption::eAddNewUser:
-            system("cls");
+          
             _showAddNewUserScreen();
             _goBackToManageUsersScreen();
             break;
         case enManageUsersMenueOption::eDeleteUser:
-            system("cls");
+     
             _showDeleteUserScreen();
             _goBackToManageUsersScreen();
             break;
         case enManageUsersMenueOption::eUpdateUser:
-            system("cls");
+        
             _showUpdateUserScreen();
             _goBackToManageUsersScreen();
             break;
         case enManageUsersMenueOption::eFindUser:
-            system("cls");
+       
             _showFindUserScreen();
             _goBackToManageUsersScreen();
             break;
         case enManageUsersMenueOption::eMainMenue:
-            system("cls");
+          
             _showMainMenueScreen();
             break;
 
@@ -96,7 +96,7 @@ public:
         if (!checkAccessRight(ClsUser::enPermission::pManageUser)) {
             return;
         }
-        system("cls");
+       
         _drawScreenHeader("\tManage User Screen");
         cout << setw(37) << left << "" << "===========================================\n";
         cout << setw(37) << left << "" << "\t\tManage User Menue\n";
