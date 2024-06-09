@@ -25,6 +25,9 @@
     <Filter Include="UI_Header\LoginScreen">
       <UniqueIdentifier>{007939d7-3c85-4caa-affe-c69e7391bd09}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Ressourcendateien\CurrencyExchange">
+      <UniqueIdentifier>{5cfac990-2a08-4f6b-89b8-d4fa8d69165b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ClsValidate.hh">
@@ -115,7 +118,10 @@
       <Filter>UI_Header\TransactionMenue</Filter>
     </ClInclude>
     <ClInclude Include="ClsCurrency.hh">
-      <Filter>Headerdateien</Filter>
+      <Filter>Ressourcendateien\CurrencyExchange</Filter>
+    </ClInclude>
+    <ClInclude Include="ClsCurrencyExchangeMenueScreen.hh">
+      <Filter>Ressourcendateien\CurrencyExchange</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
