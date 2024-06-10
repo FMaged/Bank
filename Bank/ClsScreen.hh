@@ -23,6 +23,7 @@ protected:
 
     static bool checkAccessRight(ClsUser::enPermission Permission) {
         if (!CurrentUser.checkAccessPermission(Permission)) {
+            system("cls");
             cout << "\t\t\t\t\t______________________________________";
             cout << "\n\n\t\t\t\t\t  Access Denied! Contact your Admin.";
             cout << "\n\t\t\t\t\t______________________________________\n\n";

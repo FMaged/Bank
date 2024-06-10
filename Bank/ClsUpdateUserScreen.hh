@@ -34,22 +34,22 @@ private:
         if (answer == 'Y') {
             permission += ClsUser::enPermission::pListUser;
         }
-        cout << "\nAdd new User? Y/N? ";
+        cout << "\nAdd new Client? Y/N? ";
         answer = ClsValidate::readY_OR_N();
         if (answer == 'Y') {
             permission += ClsUser::enPermission::pAddnewUser;
         }
-        cout << "\nDelete User? Y/N? ";
+        cout << "\nDelete Client? Y/N? ";
         answer = ClsValidate::readY_OR_N();
         if (answer == 'Y') {
             permission += ClsUser::enPermission::pDeleteUser;
         }
-        cout << "\nUpdate User? Y/N? ";
+        cout << "\nUpdate Client? Y/N? ";
         answer = ClsValidate::readY_OR_N();
         if (answer == 'Y') {
             permission += ClsUser::enPermission::pUpdateUser;
         }
-        cout << "\nFind User? Y/N? ";
+        cout << "\nFind Client? Y/N? ";
         answer = ClsValidate::readY_OR_N();
         if (answer == 'Y') {
             permission += ClsUser::enPermission::pFindUser;
@@ -68,6 +68,11 @@ private:
         answer = ClsValidate::readY_OR_N();
         if (answer == 'Y') {
             permission += ClsUser::enPermission::pShowLoginRegister;
+        }
+        cout << "\nCurrency Exchange? Y/N";
+        answer = ClsValidate::readY_OR_N();
+        if (answer == 'Y') {
+            permission += ClsUser::enPermission::pExchange;
         }
         return permission;
     }

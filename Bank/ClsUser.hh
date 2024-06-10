@@ -15,7 +15,8 @@ public:
 public:
     enum enPermission {
         pAll = -1, pListUser = 1, pAddnewUser = 2, pDeleteUser = 4, pUpdateUser = 8,
-        pFindUser = 16, pTransactios = 32, pManageUser = 64, pShowLoginRegister = 128
+        pFindUser = 16, pTransactios = 32, pManageUser = 64, pShowLoginRegister = 128,
+        pExchange=256
     };
 
     struct stLoginRegisterRecord {

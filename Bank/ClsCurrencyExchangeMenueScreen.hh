@@ -78,7 +78,7 @@ private:
 public:
 
 	static void showCurrencyExchange() {
-		if (!checkAccessRight(ClsUser::enPermission::pManageUser)) {
+		if (!checkAccessRight(ClsUser::enPermission::pExchange)) {
 			return;
 		}
 		

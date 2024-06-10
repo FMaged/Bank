@@ -33,7 +33,7 @@ private:
 
 public:
 	static void showLoginRegisterScreen() {
-		if (!checkAccessRight(ClsUser::enPermission::pListUser)) {
+		if (!checkAccessRight(ClsUser::enPermission::pShowLoginRegister)) {
 			return;
 		}
 		vector<ClsUser::stLoginRegisterRecord> vLoginRegisterRecord = ClsUser::getLoginRegisterList();
