@@ -129,6 +129,9 @@
     <ClInclude Include="ClsFindCurrencyScreen.hh">
       <Filter>UI_Header\CurrencyExchange</Filter>
     </ClInclude>
+    <ClInclude Include="ClsUpdateRateScreen.hh">
+      <Filter>UI_Header\CurrencyExchange</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ClsValidate.cpp">

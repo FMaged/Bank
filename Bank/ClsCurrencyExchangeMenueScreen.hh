@@ -1,9 +1,8 @@
-#pragma once
 #include <iomanip>
 #include "ClsScreen.hh"
 #include "ClsCurrencyListScreen.hh"
 #include "ClsFindCurrencyScreen.hh"
-
+#include "ClsUpdateRateScreen.hh"
 
 
 
@@ -29,7 +28,7 @@ private:
 		ClsFindCurrencyScreen::showFindCurrencyScreen();
 	}
 	static void _showUpdateRateScreen() {
-		cout << "Update Currency Rate Screen will be here!\n";
+		ClsUpdateRateScreen::showUpdateRateScreen();
 	}
 	static void _showCurrencyCalculatorScreen() {
 		cout << "Calculator Screen will be here!\n";

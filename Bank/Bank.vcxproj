@@ -153,6 +153,7 @@
     <ClInclude Include="ClsTransfer.hh" />
     <ClInclude Include="ClsTransferLog.hh" />
     <ClInclude Include="ClsUpdateClientScreen.hh" />
+    <ClInclude Include="ClsUpdateRateScreen.hh" />
     <ClInclude Include="ClsUpdateUserScreen.hh" />
     <ClInclude Include="ClsUser.hh" />
     <ClInclude Include="ClsUtil.hh" />
