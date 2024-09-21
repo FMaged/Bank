@@ -80,7 +80,5 @@ Here is an overview of the folder and file structure of the project:
 - `TransferLog.txt`: Log of all transfer activities.
 - `Users.txt`: Stores user data.
 
-### Makefile
-The project uses a `makefile` for building the project.
-  makefile --> "make" to compile "./make" to run "make clean" to clean objFile
+
 
